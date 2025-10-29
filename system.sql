@@ -8,3 +8,9 @@
 
 -- sys AS sysdba
 
+
+-- 권한부여 : GRANT
+GRANT CREATE VIEW TO scott;
+
+GRANT CREATE SYNONYM TO scott;
+GRANT CREATE PUBLIC SYNONYM TO scott;

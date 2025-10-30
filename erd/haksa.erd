@@ -1,0 +1,509 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -83.444,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "UARGgfPzZ57jLNNNwcJdq",
+      "wbi9wvKk4NYVKpFfoFqU3",
+      "L1cD3AQTgqWQyxoPbWdYq",
+      "vUFeXaGGfwYgF7MrQwaPs"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "Mk4uBzdfKRYKzuRrtOnY_": {
+        "id": "Mk4uBzdfKRYKzuRrtOnY_",
+        "name": "학생",
+        "comment": "",
+        "columnIds": [
+          "dSZ22SpBngqCYRwWmk_fw"
+        ],
+        "seqColumnIds": [
+          "dSZ22SpBngqCYRwWmk_fw"
+        ],
+        "ui": {
+          "x": 194,
+          "y": 97,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1761815758771,
+          "createAt": 1761815728745
+        }
+      },
+      "UARGgfPzZ57jLNNNwcJdq": {
+        "id": "UARGgfPzZ57jLNNNwcJdq",
+        "name": "학생",
+        "comment": "",
+        "columnIds": [
+          "Q18oWaBer-yDuCb3BTfWW",
+          "ronwr0rb2mBjrp7T-W1s1",
+          "v0xyuZTQYP1TNHyc5H9BZ",
+          "UN03NqT-2AQ9xfCTdPJNH"
+        ],
+        "seqColumnIds": [
+          "Q18oWaBer-yDuCb3BTfWW",
+          "ronwr0rb2mBjrp7T-W1s1",
+          "v0xyuZTQYP1TNHyc5H9BZ",
+          "UN03NqT-2AQ9xfCTdPJNH"
+        ],
+        "ui": {
+          "x": 58,
+          "y": 86,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1761815883268,
+          "createAt": 1761815777940
+        }
+      },
+      "wbi9wvKk4NYVKpFfoFqU3": {
+        "id": "wbi9wvKk4NYVKpFfoFqU3",
+        "name": "학과",
+        "comment": "",
+        "columnIds": [
+          "QC1N4q1ClwLuNvFbnF8U-",
+          "39DYqm193je-SmfInSyuR"
+        ],
+        "seqColumnIds": [
+          "QC1N4q1ClwLuNvFbnF8U-",
+          "39DYqm193je-SmfInSyuR",
+          "w7HXfkAs4wEVWU6ehpQWU"
+        ],
+        "ui": {
+          "x": 501,
+          "y": 49.9318,
+          "zIndex": 71,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1761815999703,
+          "createAt": 1761815892032
+        }
+      },
+      "L1cD3AQTgqWQyxoPbWdYq": {
+        "id": "L1cD3AQTgqWQyxoPbWdYq",
+        "name": "교수",
+        "comment": "",
+        "columnIds": [
+          "zhNVmAketRYSyw5hG3Cw2",
+          "Mm5r0XX-dN2M1FFQN1S3r",
+          "EBH0kg8nc_voH6XO_6_DH"
+        ],
+        "seqColumnIds": [
+          "zhNVmAketRYSyw5hG3Cw2",
+          "Mm5r0XX-dN2M1FFQN1S3r",
+          "EBH0kg8nc_voH6XO_6_DH"
+        ],
+        "ui": {
+          "x": 79,
+          "y": 403.9318,
+          "zIndex": 85,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1761815931276,
+          "createAt": 1761815916931
+        }
+      },
+      "vUFeXaGGfwYgF7MrQwaPs": {
+        "id": "vUFeXaGGfwYgF7MrQwaPs",
+        "name": "개설과목",
+        "comment": "",
+        "columnIds": [
+          "JeZz51PQwAsm4MeeSxqqR",
+          "SvL5woR2kJgTSeiwSDBb2",
+          "68kFUEy2v6DKzKkkmOME-",
+          "Fuuj_WLKYkvFuS_yKxK_u",
+          "Md-rW3U6VhncMWgg2xMNb"
+        ],
+        "seqColumnIds": [
+          "JeZz51PQwAsm4MeeSxqqR",
+          "SvL5woR2kJgTSeiwSDBb2",
+          "68kFUEy2v6DKzKkkmOME-",
+          "Fuuj_WLKYkvFuS_yKxK_u",
+          "Md-rW3U6VhncMWgg2xMNb"
+        ],
+        "ui": {
+          "x": 533.2195,
+          "y": 143.9318,
+          "zIndex": 104,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1761815984868,
+          "createAt": 1761815941982
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "dSZ22SpBngqCYRwWmk_fw": {
+        "id": "dSZ22SpBngqCYRwWmk_fw",
+        "tableId": "Mk4uBzdfKRYKzuRrtOnY_",
+        "name": "학번",
+        "comment": "",
+        "dataType": "NUM",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815774068,
+          "createAt": 1761815738442
+        }
+      },
+      "Q18oWaBer-yDuCb3BTfWW": {
+        "id": "Q18oWaBer-yDuCb3BTfWW",
+        "tableId": "UARGgfPzZ57jLNNNwcJdq",
+        "name": "학번",
+        "comment": "",
+        "dataType": "NUMBER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815873516,
+          "createAt": 1761815783821
+        }
+      },
+      "ronwr0rb2mBjrp7T-W1s1": {
+        "id": "ronwr0rb2mBjrp7T-W1s1",
+        "tableId": "UARGgfPzZ57jLNNNwcJdq",
+        "name": "이름",
+        "comment": "",
+        "dataType": "varchar2",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815878034,
+          "createAt": 1761815799043
+        }
+      },
+      "v0xyuZTQYP1TNHyc5H9BZ": {
+        "id": "v0xyuZTQYP1TNHyc5H9BZ",
+        "tableId": "UARGgfPzZ57jLNNNwcJdq",
+        "name": "키",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815857464,
+          "createAt": 1761815814375
+        }
+      },
+      "UN03NqT-2AQ9xfCTdPJNH": {
+        "id": "UN03NqT-2AQ9xfCTdPJNH",
+        "tableId": "UARGgfPzZ57jLNNNwcJdq",
+        "name": "학과코드",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815866301,
+          "createAt": 1761815860215
+        }
+      },
+      "QC1N4q1ClwLuNvFbnF8U-": {
+        "id": "QC1N4q1ClwLuNvFbnF8U-",
+        "tableId": "wbi9wvKk4NYVKpFfoFqU3",
+        "name": "학과코드",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815902275,
+          "createAt": 1761815898534
+        }
+      },
+      "39DYqm193je-SmfInSyuR": {
+        "id": "39DYqm193je-SmfInSyuR",
+        "tableId": "wbi9wvKk4NYVKpFfoFqU3",
+        "name": "학과명",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815910458,
+          "createAt": 1761815904765
+        }
+      },
+      "w7HXfkAs4wEVWU6ehpQWU": {
+        "id": "w7HXfkAs4wEVWU6ehpQWU",
+        "tableId": "wbi9wvKk4NYVKpFfoFqU3",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815905140,
+          "createAt": 1761815905140
+        }
+      },
+      "zhNVmAketRYSyw5hG3Cw2": {
+        "id": "zhNVmAketRYSyw5hG3Cw2",
+        "tableId": "L1cD3AQTgqWQyxoPbWdYq",
+        "name": "교수코드",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815925297,
+          "createAt": 1761815922153
+        }
+      },
+      "Mm5r0XX-dN2M1FFQN1S3r": {
+        "id": "Mm5r0XX-dN2M1FFQN1S3r",
+        "tableId": "L1cD3AQTgqWQyxoPbWdYq",
+        "name": "교수명",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815930078,
+          "createAt": 1761815927136
+        }
+      },
+      "EBH0kg8nc_voH6XO_6_DH": {
+        "id": "EBH0kg8nc_voH6XO_6_DH",
+        "tableId": "L1cD3AQTgqWQyxoPbWdYq",
+        "name": "학과코드",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815938421,
+          "createAt": 1761815931276
+        }
+      },
+      "JeZz51PQwAsm4MeeSxqqR": {
+        "id": "JeZz51PQwAsm4MeeSxqqR",
+        "tableId": "vUFeXaGGfwYgF7MrQwaPs",
+        "name": "과목코드",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815963749,
+          "createAt": 1761815949629
+        }
+      },
+      "SvL5woR2kJgTSeiwSDBb2": {
+        "id": "SvL5woR2kJgTSeiwSDBb2",
+        "tableId": "vUFeXaGGfwYgF7MrQwaPs",
+        "name": "과목명",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815971379,
+          "createAt": 1761815965820
+        }
+      },
+      "68kFUEy2v6DKzKkkmOME-": {
+        "id": "68kFUEy2v6DKzKkkmOME-",
+        "tableId": "vUFeXaGGfwYgF7MrQwaPs",
+        "name": "교수코드",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815977004,
+          "createAt": 1761815973437
+        }
+      },
+      "Fuuj_WLKYkvFuS_yKxK_u": {
+        "id": "Fuuj_WLKYkvFuS_yKxK_u",
+        "tableId": "vUFeXaGGfwYgF7MrQwaPs",
+        "name": "시작일",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815982849,
+          "createAt": 1761815978745
+        }
+      },
+      "Md-rW3U6VhncMWgg2xMNb": {
+        "id": "Md-rW3U6VhncMWgg2xMNb",
+        "tableId": "vUFeXaGGfwYgF7MrQwaPs",
+        "name": "종료일",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1761815987336,
+          "createAt": 1761815984868
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

@@ -79,6 +79,17 @@ CREATE DATABASE if not exists EXAM;
 USE EXAM;
 
 -- 테이블 생성
+-- 데이터 유형
+-- 숫자형 : INT, TINYINT(1 Byte), SMALLINT(2 Byte), MEDIUMINT(3 Byte), INT(4 Byte), BIGINT(8 Byte)
+-- 실수형
+-- 1. 고정소수점 방식 : DECIMAL / NUMERIC
+-- 2. 부동소수점 방식 : FLOAT / DOUBLE
+-- 문자형
+-- 1. CHAR(n) - 고정길이문자열
+-- 2. VARCHAR(n)
+-- 날짜형 : TIME / DATE / DATETIME / TIMESTAMP
+
+
 create table TABLE1(
 	COL1 INT,
 	COL2 VARCHAR(50),
@@ -93,12 +104,81 @@ create table TABLE2(
 );
 
 INSERT INTO TABLE2(COL2, COL3) VALUES('TEST', '2025-10-29');
+INSERT INTO TABLE2(COL1, COL2, COL3) VALUES(3, 'TEST', '2025-10-29');
 
 
 SELECT * FROM TABLE2;
 
+-- 현재 AUTO_INCREMENT 로 생성된 마지막 값 확인
+select LAST_INSERT_ID();
+
+-- AUTO_INCREMENT 시작값 변경
+ALTER TABLE table2 AUTO_INCREMENT = 100;
+
+-- AUTO_INCREMENT 증가값 변경
+-- SET set @@AUTO_INCREMENT_INCREMENT = 5; -- set 환경변수설정
+set @@AUTO_INCREMENT_INCREMENT = 1;
 
 
+create table EXAM_INSERT_SELECT_FROM(
+	COL1 INT,
+	COL2 VARCHAR(10)
+);
+
+
+create table EXAM_INSERT_SELECT_TO(
+	COL1 INT,
+	COL2 VARCHAR(10)
+);
+
+
+insert into EXAM_INSERT_SELECT_FROM(COL1, COL2) values(1, 'Do');
+insert into EXAM_INSERT_SELECT_FROM(COL1, COL2) values(2, 'It');
+insert into EXAM_INSERT_SELECT_FROM(COL1, COL2) values(3, 'MySQL');
+
+-- EXAM_INSERT_SELECT_FROM 데이터를 EXAM_INSERT_SELECT_TO 로 옮기기
+insert into EXAM_INSERT_SELECT_TO select * from EXAM_INSERT_SELECT_FROM;
+
+select * from EXAM_INSERT_SELECT_TO;
+SELECT * from EXAM_INSERT_SELECT_FROM;
+
+
+create table EXAM_SELECT_NEW as select * from EXAM_INSERT_SELECT_FROM;
+
+SELECT * FROM EXAM_SELECT_NEW;
+
+
+create table exam_DATE_TABLE(
+	COL1 DATE, COL2 TIME, COL3 DATETIME, COL4 TIMESTAMP 
+);
+
+INSERT INTO exam_DATE_TABLE values(now(), now(), now(), now());
+SELECT * from exam_DATE_TABLE;
+
+
+-- 사용자 생성
+-- 아이디 대소문자 구별함
+
+-- localhost : 내컴퓨터(로컬 접속만 가능)
+-- '%' : 모든 IP에서 접속가능(외부 접속 허용)
+CREATE USER 'TEST1'@'localhost' IDENTIFIED BY '12345';
+-- CREATE USER 'TEST1'@'%' IDENTIFIED BY '12345';
+
+
+-- 권한 부여
+-- GRANT 권한목록 ON 데이터베이스.테이블 TO '사용자이름'@'호스트'
+-- GRANT SELECT, INSERT, UPDATE ON exam.table1 TP 'TEST1'@'localhost';
+
+-- 권한 여러개 부여
+GRANT ALL PRIVILEGES ON exam. * TO 'TEST1'@'localhost';
+-- 변경사항 반영
+flush PRIVILEGES; 
+
+-- 사용자 삭제
+DROP USER 'TEST1'@'localhost';
+
+-- 비밀번호 변경
+ALTER 'TEST1'@'localhost' IDENTIFIED BY '12345';
 
 
 

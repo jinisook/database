@@ -105,7 +105,7 @@ SELECT *FROM emp WHERE empno = 7698;
 SELECT *FROM emp WHERE deptno=30 AND JOB = 'salesman';
 
 -- 부서번호가 30번이거나 사원직책이 analyst인 사원정보 조회
- SELECT *FROM emp WHERE deptno=30 AND JOB  ='analyst';
+SELECT *FROM emp WHERE deptno=30 AND JOB  ='analyst';
 
 
 -- between a and b
@@ -1758,7 +1758,7 @@ INSERT INTO TABLE_PK VALUES(NULL, 'test01', '010-1234-5678');
 
 -- where pk컬럼 = 1; 
 
--- 4) FOREIGN KRY(외래키)
+-- 4) FOREIGN KEY(외래키)
 -- 다른 테이블과 관계를 맺을 때
 
 

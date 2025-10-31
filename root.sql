@@ -187,12 +187,12 @@ ALTER 'TEST1'@'localhost' IDENTIFIED BY '12345';
 
 
 
+-- 학사erd
+CREATE USER 'javadb'@'%' IDENTIFIED BY '12345';
 
+GRANT ALL PRIVILEGES ON exam. * TO 'javadb'@'%';
 
-
-
-
-
+flush PRIVILEGES; 
 
 
 
